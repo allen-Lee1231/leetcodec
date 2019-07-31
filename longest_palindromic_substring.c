@@ -5,7 +5,7 @@
 
 
 char * longestPalindrome(char * s){
-    if (s==NULL || *s=='\0' || *(s+1)=='\0') return s;
+    if (s == NULL || *s == '\0' || *(s + 1) == '\0') return s;
     if (*(s + 2) == '\0' && s[0] == s[1]) return s;
     
     char *container = (char*) calloc(1001, sizeof(char));
