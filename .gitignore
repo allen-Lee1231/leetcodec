@@ -106,3 +106,11 @@ venv.bak/
 # pycharm
 .idea
 workspace.xml
+
+# visual studio
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+Debug
+.vs

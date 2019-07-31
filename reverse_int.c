@@ -1,15 +1,22 @@
 #include <stdio.h>
 //Given a 32-bit signed integer, reverse digits of an integer.
 
-int reverse(int x) 
+int e(int i)
 {
-	int e(int i) {
-		int c = 1;
-		while (--i) c *= 10;
-		return c;
+	int c = 1;
+	while (--i)
+	{
+		c *= 10;
 	}
+	return c;
+}
 
-	int digit = 0, M = 2147483641;
+int reverse(int x)
+{
+
+
+	int digit = 0;
+	int M = 2147483641;
 	int ans = x;
 
 	while (ans) {
@@ -17,11 +24,18 @@ int reverse(int x)
 		ans /= 10;
 	}
 
-	if (digit >= 10 && abs(x % 10) > 2) return 0;
+	if (digit >= 10 && abs(x % 10) > 2)
+	{
+		return 0;
+	}
 
-	while (x) {
+	while (x) 
+	{
 		M -= abs(e(digit) * (x % 10));
-		if (M < 0) return 0;
+		if (M < 0)
+		{
+			return 0;
+		}
 		ans += e(digit)*(x % 10);
 		digit--;
 		x /= 10;
@@ -33,9 +47,9 @@ int reverse(int x)
 
 int main(int argc, char*argv)
 {
-	int test=12345;
-	if (argc)
-	{
+	int test = 12345;
+	if (argc >= 2)
+	{//TODO: param check.
 		test = atoi(argv[1]);
 	}
 	printf("interger: %d\treversed: %d\n", test, reverse(test));
