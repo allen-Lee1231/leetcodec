@@ -114,6 +114,7 @@ workspace.xml
 *.vcxproj.user
 Debug
 .vs
+.vscode/
 
 # .out
 *.out
