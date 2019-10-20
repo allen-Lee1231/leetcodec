@@ -118,3 +118,4 @@ Debug
 
 # .out
 *.out
+test.c
