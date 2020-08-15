@@ -115,3 +115,5 @@ workspace.xml
 Debug
 .vs
 test.*
+.vscode/
+*.out

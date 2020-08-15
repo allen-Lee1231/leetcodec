@@ -6,6 +6,7 @@
 * };
 */
 
+// Note that this code only work in leetcode solution console.
 
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2){
     int carry = 0, node = 0;
