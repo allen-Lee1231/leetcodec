@@ -114,3 +114,4 @@ workspace.xml
 *.vcxproj.user
 Debug
 .vs
+test.*
